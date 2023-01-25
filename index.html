@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+  <style>
+   @media screen and (max-width: 768px) {
+    #h3 {
+     font-style: italic;
+     font-family: 'Zen Dots', sans-serif;
+    }
+
+    li {
+      font-family: 'Klee One', cursive;
+    }
+
+    p {
+      font-family: 'Klee One', cursive;
+    }
+
+    #table {
+     border: 1px solid black;
+     border-collapse: collapse;
+    }
+
+    th {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    td {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    a {
+     cursor: pointer;
+     text-decoration: none;
+    }
+
+    #block-one {
+     background-color: green;
+     color: orange;
+     border: 2px solid black;
+    }
+
+    #block-two {
+     background-color: blueviolet;
+     color: yellow;
+     border: 2px solid black;
+     margin-top: 20px;
+    }
+
+    #block-three {
+     background-color: yellow;
+     color: blue;
+     border: 2px solid black;
+     margin-top: 20px;
+    }
+
+    #block-vour {
+     background-color: red;
+     border: 2px solid black;
+     margin-top: 20px;
+    }
+
+    #tag {
+     border: 2px solid black;
+     color: black;
+     background-color: orange;
+     color: green;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+    }
+
+    #tag-two {
+     border: 2px solid black;
+     color: black;
+     background-color: yellow;
+     color: blueviolet;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+    }
+
+    #tag-three {
+     border: 2px solid black;
+     color: black;
+     background-color: blue;
+     color: yellow;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+    }
+
+    #tag-vour {
+     border: 2px solid black;
+     color: black;
+     background-color: grey;
+     color: red;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Zen Dots', cursive;
+    }
+
+    h2 {
+      font-family: 'Zen Dots', cursive;
+    }
+   }
+
+   @media screen and (min-width: 769px) and (max-width: 992px) {
+    #h3 {
+     font-style: italic;
+     font-family: 'Zen Dots', sans-serif;
+    }
+
+    li {
+      font-family: 'Klee One', cursive;
+    }
+
+    p {
+      font-family: 'Klee One', cursive;
+    }
+
+    #table {
+     border: 1px solid black;
+     border-collapse: collapse;
+    }
+
+    th {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    td {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    a {
+     cursor: pointer;
+     text-decoration: none;
+    }
+
+    #blocks-caption {
+      display: flex;
+    }
+
+    #blocks-caption-two {
+      display: flex;
+    }
+
+    #block-one {
+     background-color: green;
+     color: orange;
+     border: 2px solid black;
+     height: 279px;
+     width: 466px;
+    }
+
+    #block-two {
+     background-color: blueviolet;
+     color: yellow;
+     border: 2px solid black;
+     margin-top: 20px;
+     width: 466px;
+     height: 278.8px;
+     margin-left: 30px;
+     margin-top: 0px;
+    }
+
+    #block-three {
+     background-color: yellow;
+     color: blue;
+     border: 2px solid black;
+     margin-top: 20px;
+     width: 466px;
+     height: 278.8px;
+    }
+
+    #block-vour {
+     background-color: red;
+     border: 2px solid black;
+     margin-top: 20px;
+     width: 466px;
+     height: 278.8px;
+     margin-left: 30px;
+    }
+
+    #tag {
+     border: 2px solid black;
+     color: black;
+     background-color: orange;
+     color: green;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 115px;
+     margin-left: -2px;
+    }
+
+    #tag-two {
+     border: 2px solid black;
+     color: black;
+     background-color: yellow;
+     color: blueviolet;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 45px;
+     margin-left: -2px;
+    }
+
+    #tag-three {
+     border: 2px solid black;
+     color: black;
+     background-color: blue;
+     color: yellow;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-left: -2px;
+     margin-top: 115px;
+    }
+
+    #tag-vour {
+     border: 2px solid black;
+     color: black;
+     background-color: grey;
+     color: red;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-left: -2px;
+     margin-top: 3px;
+    }
+
+    h1 {
+      font-family: 'Zen Dots', cursive;
+    }
+
+    h2 {
+      font-family: 'Zen Dots', cursive;
+    }
+   }
+
+   @media screen and (min-width: 993px) and (max-width: 1200px) {
+    #h3 {
+     font-style: italic;
+     font-family: 'Zen Dots', sans-serif;
+    }
+
+    li {
+      font-family: 'Klee One', cursive;
+    }
+
+    p {
+      font-family: 'Klee One', cursive;
+    }
+
+    #table {
+     border: 1px solid black;
+     border-collapse: collapse;
+    }
+
+    th {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    td {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    a {
+     cursor: pointer;
+     text-decoration: none;
+    }
+
+    #blocks-caption {
+      display: flex;
+    }
+
+    #block-one {
+     background-color: green;
+     color: orange;
+     border: 2px solid black;
+     height: 279px;
+     width: 376px;
+    }
+
+    #block-two {
+     background-color: blueviolet;
+     color: yellow;
+     border: 2px solid black;
+     margin-top: 20px;
+     width: 376px;
+     height: 278.8px;
+     margin-left: 20px;
+     margin-top: 0px;
+    }
+
+    #block-three {
+     background-color: yellow;
+     color: blue;
+     border: 2px solid black;
+     margin-top: -282px;
+     margin-left: 800px;
+     width: 376px;
+     height: 278.8px;
+    }
+
+    #block-vour {
+     background-color: red;
+     border: 2px solid black;
+     margin-top: 20px;
+     width: 1180px;
+     height: 278.8px;
+    }
+
+    #tag {
+     border: 2px solid black;
+     color: black;
+     background-color: orange;
+     color: green;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 93px;
+     margin-left: -2px;
+    }
+
+    #tag-two {
+     border: 2px solid black;
+     color: black;
+     background-color: yellow;
+     color: blueviolet;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 45px;
+     margin-left: -2px;
+    }
+
+    #tag-three {
+     border: 2px solid black;
+     color: black;
+     background-color: blue;
+     color: yellow;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-left: -2px;
+     margin-top: 115px;
+    }
+
+    #tag-vour {
+     border: 2px solid black;
+     color: black;
+     background-color: grey;
+     color: red;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-left: -2px;
+     margin-top: 3px;
+    }
+
+    h1 {
+      font-family: 'Zen Dots', cursive;
+    }
+
+    h2 {
+      font-family: 'Zen Dots', cursive;
+    }
+   }
+
+   @media screen and (min-width: 1201px) {
+    #h3 {
+     font-style: italic;
+     font-family: 'Zen Dots', sans-serif;
+    }
+
+    li {
+      font-family: 'Klee One', cursive;
+    }
+
+    p {
+      font-family: 'Klee One', cursive;
+    }
+
+    #table {
+     border: 1px solid black;
+     border-collapse: collapse;
+    }
+
+    th {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    td {
+      border: 1px solid black;
+      font-family: 'Klee One', cursive;
+    }
+
+    a {
+     cursor: pointer;
+     text-decoration: none;
+    }
+
+    #blocks {
+      display: flex;
+    }
+
+    #block-one {
+     background-color: green;
+     color: orange;
+     border: 2px solid black;
+     width: 450px;
+     height: 300px;
+    }
+
+    #block-two {
+     background-color: blueviolet;
+     color: yellow;
+     border: 2px solid black;
+     margin-left: 480px;
+     margin-top: -300px;
+     width: 450px;
+     height: 300px;
+    }
+
+    #block-three {
+     background-color: yellow;
+     color: blue;
+     border: 2px solid black;
+     margin-left: 30px;
+     margin-top: 2px;
+     width: 450px;
+     height: 300px;
+    }
+
+    #block-vour {
+     background-color: red;
+     border: 2px solid black;
+     margin-left: 510px;
+     margin-top: -300px;
+     width: 450px;
+     height: 300px;
+    }
+
+    #tag {
+     border: 2px solid black;
+     color: black;
+     background-color: orange;
+     color: green;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 137px;
+     margin-left: -2px;
+    }
+
+    #tag-two {
+     border: 2px solid black;
+     color: black;
+     background-color: yellow;
+     color: blueviolet;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 68px;
+     
+     margin-left: -2px;
+    }
+
+    #tag-three {
+     border: 2px solid black;
+     color: black;
+     background-color: blue;
+     color: yellow;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 137px;
+     margin-left: -2px;
+    }
+
+    #tag-vour {
+     border: 2px solid black;
+     color: black;
+     background-color: grey;
+     color: red;
+     font-size: 120%;
+     width: 110px;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     font-family: 'Oswald', sans-serif;
+     margin-top: 25px;
+     margin-left: -2px;
+    }
+
+    h1 {
+      font-family: 'Zen Dots', cursive;
+    }
+
+    h2 {
+      font-family: 'Zen Dots', cursive;
+    }
+   }
+  </style>
+ </head>
+
+ <body>
+  <h1>Контрольна робота</h1>
+  <h2>Кузів Роман Романович</h2>
+  <h3 id="h3">Варіант 1:</h3>
+
+  <div id="blocks">
+    <div id="blocks-caption">
+      <div id="block-one">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> 
+        Nam, placeat recusandae velit quos commodi eum vel distinctio, sunt voluptas consequatur, dolorem facere est quae exercitationem!<br> 
+        Ut tempora perspiciatis vitae deserunt?</p>
+        <h3 id="tag">Текст</h3>
+      </div>
+
+      <div id="block-two">
+      <nav>
+        <ol>
+        <li>Хліб</li>
+        <li>Масло</li>
+        <li>Мінеральна вода</li>
+        <li>
+          Крупи:
+          <ul>
+          <li>Гречка</li>
+          <li>Рис</li>
+          <li>Манка</li>
+          </ul>
+        </li>
+        <li>Макарони</li>
+        </ol>
+      </nav>
+      <h3 id="tag-two">Список</h3>
+      </div>
+    </div>
+
+    <div id="blocks-caption-two">
+      <div id="block-three">
+      <table id="table">
+
+        <tr>
+        <th>Країна</th>
+        <th>Населення</th>
+        </tr>
+
+        <tr>
+        <td>Німеччина</td>
+        <td>83,02 млн. ос.</td>
+        </tr>
+
+        <tr>
+        <td>Чехія</td>
+        <td>10,69 млн. ос.</td>
+        </tr>
+
+        <tr>
+        <td>Франція</td>
+        <td>66,8 млн. ос.</td>
+        </tr>
+
+        <tr>
+        <td>Бельгія</td>
+        <td>11,46 млн. ос.</td>
+        </tr>
+
+      </table>
+      <h3 id="tag-three">Таблиця</h3>
+      </div>
+
+      <div id="block-vour">
+      <img src="orange.jpg" alt="">
+      <h3 id="tag-vour">Зображення</h3>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://place-hold.it/320x240/orange.jpg">Посилання на зображення</a>
+ </body>
+
+</html>
